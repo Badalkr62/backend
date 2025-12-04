@@ -1,4 +1,5 @@
 import sendEmailFun from "../config/sendEmail.js";
+import ForgotPasswordTemplate from "../utils/ForgotPasswordTemplate.js";
 import UserModel from "../models/user.model.js";
 import jwt from "jsonwebtoken";
 import bcryptjs from "bcryptjs";
@@ -9,9 +10,7 @@ dotenv.config();
 import { v2 as cloudinary } from "cloudinary";
 import fs from "fs";
 import VerificationEmail from "../utils/VerificationEmail.js";
-import ForgotPasswordTemplate from "../utils/forgotPasswordTemplate.js";
 import ReviewModel from "../models/review.model.js";
-
 // Configuration
 cloudinary.config({
   cloud_name: process.env.cloudinary_Config_Cloud_Name,
