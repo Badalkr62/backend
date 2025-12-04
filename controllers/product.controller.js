@@ -2,8 +2,8 @@ import { v2 as cloudinary } from "cloudinary";
 import fs from "fs";
 import ProductModel from "../models/product.model.js";
 import ProductRAMSModel from "../models/productRAMS.js";
-import ProductWeightModel from "../models/productWeight.js";
 import ProductSizeModel from "../models/productSIZE.js";
+import ProductWeightModel from "../models/productWEIGHT.js";
 
 // for image connection between DB to cloudinary
 // Configuration
