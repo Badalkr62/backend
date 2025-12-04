@@ -33,7 +33,7 @@ app.use(
 
 const PORT = process.env.PORT || 8080;
 
-app.post("/", (req, res) => {
+app.get("/", (req, res) => {
   res.json({
     message: "server is running on port " + PORT,
   });
